@@ -1,0 +1,9 @@
+services:
+  linil-admin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: linil-admin:latest
+    ports:
+      - '8080:80'
+    restart: unless-stopped
